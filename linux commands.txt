@@ -1,0 +1,150 @@
+
+#print user
+whoami 
+
+#switch user
+su - 
+
+#change dir
+cd (! can't cd in files)
+
+#print working dir
+pwd 
+
+#list dir
+ls
+
+#list with properties
+ls -l
+
+#dir properties
+dr** 	(directory)
+l**	(link)
+-**	(regular file)
+c	(device file)
+s	(socket)
+p	(named pip)
+b	(block device)
+
+#Root dir
+/:
+
+#root home dir
+/root
+
+#change user password
+passwd coder
+
+#absolute path
+cd /var/log/samba	(relative)
+
+#relative path
+cd /var
+cd log
+cd samba
+
+#create file
+touch	(create file)
+ex - touch jerry
+
+#copy files
+cp	(copy)
+ex - 	cp jerry lax
+
+
+#vi create file(editor)
+ex- vi homer  
+save and exit - 	shift + : wq!
+
+
+#create dir
+mkdir
+
+#list dir in timly manner
+ls -ltr (newest one in bottom)
+
+#cpoy the dir
+cp -r [dir] [dest] (if dest is not present it will create new)
+
+#find dir/file
+find . -name "name of dir"
+
+#find path
+locate name_of_dir
+
+#create multiple file with same prefix
+touch abc{1..9}-xyz
+
+#remove
+rm abc* or rm *xyz
+
+#link file
+-got to place where you want to create link
+ln /home/dir/file
+
+#permissions
+chmod g-w dir/file_name (will remove write access for group g/u/o a for allch )
+
+#permission using numerical
+0	NO permission
+1	execute
+2	write
+3	exe + write
+4	read
+5	read + exe
+6	read + write
+7	exe + write + read
+
+ex - chmod 766 file_name
+
+# file ownership / change ownership
+there 2 owner user | group
+
+command : chown 
+	  chgrp 
+	  
+	  chown user_name filename
+
+# ACL
+command setfacl
+	getfacl
+	
+ex - 	setfcl -m u:user_name:rwx file_name/path
+	setfcl -m g:group_name:rwx file_name/path
+	
+	//remove 
+	setfcl -x u:user_name file_name/path
+	//remove all
+	setfcl -b file_name/path
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
